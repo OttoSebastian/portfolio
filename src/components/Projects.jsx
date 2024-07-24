@@ -14,7 +14,7 @@ const logoStyle = {
 export default function Projects({refer}) {
 
   const portfolioCode = () => {
-    window.open('https://github.com/OttoSebastian/portfolio-v2', '_blank');
+    window.open('https://github.com/OttoSebastian/portfolio', '_blank');
   };
   const weatherAppCode = () => {
     window.open('https://github.com/OttoSebastian/weather-app', '_blank');
