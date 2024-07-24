@@ -1,2 +1,3 @@
-# portfolio
-Portfolio about myself and my skills. Build by using JavaScript and React.
+# portfolio-website
+
+Webpage about myself, my skills and projects. The first version is now finsihed. The idea was to create a clean and minimalistic design for my own website using React. Responsive for laptops and larger screens only, not mobile.

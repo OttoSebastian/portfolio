@@ -1,0 +1,287 @@
+@font-face {
+  font-family: highriseLight;
+  src: url(fonts/highrise_light.otf);
+}
+@font-face {
+  font-family: louis;
+  src: url(fonts/louisGeorgeLight.ttf);
+}
+h1 {
+  font-family: highriseLight;
+  font-weight: 500;
+  letter-spacing: 0.4rem;
+}
+p {
+  font-family: louis;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  width: 60px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  top: 100px;
+  background-color: rgb(236, 236, 236);
+  transition: ease-in-out 0.3s;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* box-shadow: 5px 0 0px navy; */
+}
+.sidebar:hover {
+  width: 200px;
+}
+.sidebar:hover > .item > .text {
+  opacity: 1;
+}
+.hrSideBar {
+  height: 2px;
+  background-color: black;
+  border-color: black;
+  border-width: 0;
+  margin: 15px 0;
+}
+.item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  cursor: pointer;
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 90%,
+      navy 90%,
+      navy 100%
+    );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 300ms;
+}
+.item:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+.icon {
+  width: 40px;
+  height: 35px;
+  flex-shrink: 0;
+  padding-right: 10px;
+  color: navy;
+}
+.text {
+  color: black;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  transition-delay: .2s;
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+/* About me */
+.aboutDiv {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.about-left {
+  max-width: 35%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-right {
+  max-width: 30%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutHeader {
+  font-size: 6rem;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  margin-top: 10rem;
+}
+.aboutPic {
+  font-size: 6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutText {
+  margin-top: 8rem;
+  font-size: 1.4rem;
+}
+.socials {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: navy;
+}
+
+/* IT skills */
+.itSkillsDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+.contentHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: navy;
+  font-size: 2.5rem;
+  max-width: 40%;
+}
+.skillsContent {
+  margin-top: 5rem;
+  width: 75%;
+  display: flex;
+  gap: 5rem;
+}
+
+/* Skill Card */
+.skillCard {
+  width: 30%;
+  padding: 0.5rem;
+  background-color: rgb(236, 236, 236);
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+}
+.skillCard:hover {
+  transform: translateY(-10px);
+}
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-bottom: 0.5rem solid navy;
+}
+.cardBody {
+  font-family: louis;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Projects */
+.projectsDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projectListContainer {
+  margin-top: 5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Project Info */
+.projectInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  gap: 2rem;
+  font-family: louis;
+  border-top: 0.2rem solid black;
+  border-bottom: 0.2rem solid black;
+  padding: 1rem;
+}
+.projectName {
+  width: 30%;
+}
+.projectKeyWords {
+  width: 60%;
+}
+.projectCode {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Code button */
+.codeBtn {
+  font-family: louis;
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 100%;
+  background-color: white;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+}
+.codeBtn:hover {
+  cursor: pointer;
+  background-color: navy;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footerDiv {
+  height: 30vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.footerContent {
+  height: 85%;
+  padding: 1rem;
+}
+.footerHeader {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.footerText {
+  color: white;
+  font-size: 1.1rem;
+}
+.footerItem {
+  display: flex;
+  gap: 1rem;
+}
+.footerIcon {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  color: white;
+}
+.verticalLine{
+  width: 0.2rem;
+  height: 85%;
+  background-color: white;
+}
